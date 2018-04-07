@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js change Image</title>
+</head>
+<body>
+	<p> change Image</p>
+
+	<script type="text/javascript">
+		function changeIamge() {
+			// body...
+
+			x = document.getElementById('myImage')
+
+			if(x.src.match("dva"))
+			{
+				//document.write ("<h1> Helloween </h1>");
+				x.src = "./Image/leimu.jpg";
+			}else{
+
+				x.src = "./Image/dva.jpg";
+			}
+		}
+	</script>
+
+	<img id = "myImage" onclick = "changeIamge()" src="./Image/leimu.jpg">
+</body>
+</html>
